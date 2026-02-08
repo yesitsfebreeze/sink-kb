@@ -1,8 +1,8 @@
 ---
 include:
   - board: nice_nano
-    shield: cygnus_left
+    shield: zqet_left
   - board: nice_nano
-    shield: cygnus_right
+    shield: zqet_right
   - board: nice_nano
     shield: settings_reset

@@ -1,19 +1,19 @@
 
 
-if SHIELD_CYGNUS_LEFT
+if SHIELD_ZQET_LEFT
 
 config ZMK_BATTERY_REPORTING
 	default n
 
 config ZMK_KEYBOARD_NAME
-	default "cygnus"
+	default "zqet"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
+if SHIELD_ZQET_LEFT || SHIELD_ZQET_RIGHT
 
 config ZMK_SPLIT
 	default y

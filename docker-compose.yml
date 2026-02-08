@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   zmk-build:
     build:
@@ -7,4 +5,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./bin:/workspace/bin
-    container_name: cygnus-zmk-build
+    container_name: zmk
