@@ -1,5 +1,0 @@
-config SHIELD_ZQET_LEFT
-    def_bool $(shields_list_contains,zqet_left)
-
-config SHIELD_ZQET_RIGHT
-    def_bool $(shields_list_contains,zqet_right)

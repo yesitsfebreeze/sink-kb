@@ -23,18 +23,18 @@ RUN mkdir -p /workspace/bin
 RUN echo '#!/bin/bash\n\
 set -e\n\
 \n\
-echo "Building ZQET firmware..."\n\
+echo "Building SHIKAKUI firmware..."\n\
 \n\
 echo "Building left half..."\n\
 west build -d /build/left -p -b "nice_nano" \\\n\
   -s /workspace/zmk/app \\\n\
-  -- -DSHIELD="zqet_left" \\\n\
+  -- -DSHIELD="shikakui_left" \\\n\
   -DZMK_CONFIG="/workspace/config"\n\
 \n\
 echo "Building right half..."\n\
 west build -d /build/right -p -b "nice_nano" \\\n\
   -s /workspace/zmk/app \\\n\
-  -- -DSHIELD="zqet_right" \\\n\
+  -- -DSHIELD="shikakui_right" \\\n\
   -DZMK_CONFIG="/workspace/config"\n\
 \n\
 echo "Building settings reset..."\n\
@@ -44,8 +44,8 @@ west build -d /build/settings_reset -p -b "nice_nano" \\\n\
   -DZMK_CONFIG="/workspace/config"\n\
 \n\
 echo "Copying firmware files..."\n\
-cp /build/left/zephyr/zmk.uf2 /workspace/bin/zqet_left.uf2\n\
-cp /build/right/zephyr/zmk.uf2 /workspace/bin/zqet_right.uf2\n\
+cp /build/left/zephyr/zmk.uf2 /workspace/bin/shikakui_left.uf2\n\
+cp /build/right/zephyr/zmk.uf2 /workspace/bin/shikakui_right.uf2\n\
 cp /build/settings_reset/zephyr/zmk.uf2 /workspace/bin/settings_reset.uf2\n\
 \n\
 echo "Build complete! Firmware files are in bin/"\n\

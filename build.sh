@@ -1,9 +1,9 @@
 #!/bin/bash
-# Build script for ZQET ZMK firmware using Docker
+# Build script for SHIKAKUI ZMK firmware using Docker
 
 set -e
 
-echo "Building ZQET firmware with Docker..."
+echo "Building SHIKAKUI firmware with Docker..."
 
 # Create bin directory if it doesn't exist
 mkdir -p bin
@@ -22,6 +22,6 @@ echo ""
 echo "To flash:"
 echo "1. Put keyboard half into bootloader mode (double-tap reset)"
 echo "2. Copy the appropriate .uf2 file to the keyboard drive"
-echo "   - Left half: bin/zqet_left.uf2"
-echo "   - Right half: bin/zqet_right.uf2"
+echo "   - Left half: bin/shikakui_left.uf2"
+echo "   - Right half: bin/shikakui_right.uf2"
 echo "   - Settings reset: bin/settings_reset.uf2"
