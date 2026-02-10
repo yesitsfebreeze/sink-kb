@@ -188,16 +188,16 @@
         };
     };
 
-//    combos {
-//        compatible = "zmk,combos";
-//
-//       ComboLayer {
-//            timeout-ms = <250>;
-//            slow-release;
-//            bindings = <&mo L3>;
-//            key-positions = <32 33>;
-//        };
-//    };
+    //    combos {
+    //        compatible = "zmk,combos";
+    //
+    //       ComboLayer {
+    //            timeout-ms = <250>;
+    //            slow-release;
+    //            bindings = <&mo L3>;
+    //            key-positions = <32 33>;
+    //        };
+    //    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -205,10 +205,10 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc             &kp L  &kp W      &kp D    &kp Y             &kp J            &kp U     &kp M     &kp O  &kp LS(F12)
-&kp Z              &kp R  &kp S      &kp T    &kp G             &kp H            &kp N     &kp E     &kp I  &kp Q
-&mtc A LEFT_SHIFT  &kp X  &kp C      &kp V    &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &kp F     &kp B     &kp K  &kp P
-                          &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 RET      &kp BSPC  &kp LGUI
+&gresc  &kp L  &kp W      &kp D    &kp Y             &kp J            &kp U     &kp M     &kp O  &kp BACKSPACE
+&kp Z   &kp R  &kp S      &kp T    &kp G             &kp H            &kp N     &kp E     &kp I  &kp Q
+&kp A   &kp X  &kp C      &kp V    &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &kp F     &kp B     &kp K  &kp P
+               &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 RET      &kp BSPC  &kp LGUI
             >;
         };
 
@@ -223,10 +223,10 @@
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL    &trans       &trans  &trans   &trans  &trans
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0       &trans       &colon  &quotes  &trans  &trans
-&trans          &kp N7  &kp N8  &kp N9  &kp SLASH    &kp PERCENT  &dot    &comma   &trans  &slash
-                        &trans  &trans  &trans       &trans       &trans  &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_3  &kp DEL
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &dot          &trans
+&trans          &kp N7  &kp N8  &kp N9  &kp SLASH    &kp N7        &kp N8        &kp N9        &comma        &kp N0
+                        &trans  &trans  &trans       &trans        &trans        &trans
             >;
         };
 
