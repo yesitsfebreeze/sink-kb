@@ -205,8 +205,8 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc  &kp L  &kp W      &kp D    &kp Y             &kp J              &kp U   &kp M     &kp O  &kp ENTER
-&kp Z   &kp R  &kp S      &kp T    &kp G             &kp H              &kp N   &kp E     &kp I  &kp Q
+&gresc  &kp L  &kp W      &kp T    &kp Y             &kp J              &kp U   &kp M     &kp O  &kp ENTER
+&kp Z   &kp R  &kp S      &kp D    &kp G             &kp H              &kp N   &kp E     &kp I  &kp Q
 &kp A   &kp X  &kp C      &kp V    &kp LEFT_SHIFT    &kp RIGHT_SHIFT    &kp F   &kp B     &kp K  &kp P
                &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 BACKSPACE  &slash  &kp LGUI
             >;
