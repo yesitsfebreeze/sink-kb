@@ -1,8 +1,8 @@
 ---
 include:
   - board: nice_nano
-    shield: shikakui_left
+    shield: bloq_left
   - board: nice_nano
-    shield: shikakui_right
+    shield: bloq_right
   - board: nice_nano
     shield: settings_reset

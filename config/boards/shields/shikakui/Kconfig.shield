@@ -1,5 +1,0 @@
-config SHIELD_SHIKAKUI_LEFT
-    def_bool $(shields_list_contains,shikakui_left)
-
-config SHIELD_SHIKAKUI_RIGHT
-    def_bool $(shields_list_contains,shikakui_right)

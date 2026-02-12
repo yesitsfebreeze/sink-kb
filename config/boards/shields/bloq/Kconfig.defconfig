@@ -1,19 +1,19 @@
 
 
-if SHIELD_SHIKAKUI_LEFT
+if SHIELD_BLOQ_LEFT
 
 config ZMK_BATTERY_REPORTING
 	default n
 
 config ZMK_KEYBOARD_NAME
-	default "shikakui"
+	default "bloq"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_SHIKAKUI_LEFT || SHIELD_SHIKAKUI_RIGHT
+if SHIELD_BLOQ_LEFT || SHIELD_BLOQ_RIGHT
 
 config ZMK_SPLIT
 	default y

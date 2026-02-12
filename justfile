@@ -12,7 +12,7 @@ build-left: prepare-bin
 build-right: prepare-bin
 	@docker compose run --rm -e BUILD_VARIANT=keymap -e BUILD_TARGET=right zmk-build
 
-build-all: prepare-bin
+pobuild-all: prepare-bin
 	@docker compose run --rm -e BUILD_VARIANT=all -e BUILD_TARGET=both zmk-build
 
 build-fresh: prepare-bin

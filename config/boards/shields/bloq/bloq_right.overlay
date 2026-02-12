@@ -1,4 +1,4 @@
-#include "shikakui.dtsi"
+#include "bloq.dtsi"
 
 &default_transform { col-offset = <5>; };
 

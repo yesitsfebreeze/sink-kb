@@ -23,7 +23,7 @@ RUN mkdir -p /workspace/bin
 RUN echo '#!/bin/bash\n\
 set -e\n\
 \n\
-echo "Building SHIKAKUI firmware..."\n\
+echo "Building BLOQ firmware..."\n\
 BUILD_VARIANT="${BUILD_VARIANT:-keymap}"\n\
 BUILD_TARGET="${BUILD_TARGET:-both}"\n\
 echo "Build variant: ${BUILD_VARIANT}"\n\
@@ -43,12 +43,12 @@ fi\n\
 \n\
 if [ "$BUILD_TARGET" = "left" ] || [ "$BUILD_TARGET" = "both" ]; then\n\
   echo "Building left half..."\n\
-  west build -d /build/left -b "nice_nano" \\\n    -s /workspace/zmk/app \\\n    -- -DSHIELD="shikakui_left" ${COMMON_CMAKE_ARGS}\n\
+  west build -d /build/left -b "nice_nano" \\\n    -s /workspace/zmk/app \\\n    -- -DSHIELD="bloq_left" ${COMMON_CMAKE_ARGS}\n\
 fi\n\
 \n\
 if [ "$BUILD_TARGET" = "right" ] || [ "$BUILD_TARGET" = "both" ]; then\n\
   echo "Building right half..."\n\
-  west build -d /build/right -b "nice_nano" \\\n    -s /workspace/zmk/app \\\n    -- -DSHIELD="shikakui_right" ${COMMON_CMAKE_ARGS}\n\
+  west build -d /build/right -b "nice_nano" \\\n    -s /workspace/zmk/app \\\n    -- -DSHIELD="bloq_right" ${COMMON_CMAKE_ARGS}\n\
 fi\n\
 \n\
 if [ "$BUILD_VARIANT" = "all" ] && [ "$BUILD_TARGET" = "both" ]; then\n\
@@ -58,10 +58,10 @@ fi\n\
 \n\
 echo "Copying firmware files..."\n\
 if [ "$BUILD_TARGET" = "left" ] || [ "$BUILD_TARGET" = "both" ]; then\n\
-  cp /build/left/zephyr/zmk.uf2 /workspace/bin/shikakui_left.uf2\n\
+  cp /build/left/zephyr/zmk.uf2 /workspace/bin/bloq_left.uf2\n\
 fi\n\
 if [ "$BUILD_TARGET" = "right" ] || [ "$BUILD_TARGET" = "both" ]; then\n\
-  cp /build/right/zephyr/zmk.uf2 /workspace/bin/shikakui_right.uf2\n\
+  cp /build/right/zephyr/zmk.uf2 /workspace/bin/bloq_right.uf2\n\
 fi\n\
 if [ "$BUILD_VARIANT" = "all" ] && [ "$BUILD_TARGET" = "both" ]; then\n\
   cp /build/settings_reset/zephyr/zmk.uf2 /workspace/bin/settings_reset.uf2\n\
